@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta charset="utf-8">        
+<title>DigiAddress Check</title>
+<style>
+.flex-container {
+	display: flex;
+	width: 100%;
+}
+.fill-width {
+	flex: 1;
+}
+.submit {
+	positon: relative;
+	float: right;
+}
+.section {
+	width:	100%;
+	border: solid;
+	padding-bottom: 15px;
+}
+h1 {
+	margin-top: 0px;
+}
+[contenteditable] {
+    border: 1px solid gray;
+}
+#ipubError{
+	
+}
+.button{
+	width:	40%;
+	height:	40px;
+	margin: 10px;
+}
+body {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<h1>DigiAddress Check</h1>
+	<div class="flex-container">
+		Seed Phrase:&nbsp;<input type="text" id="seed" class="fill-width">
+	</div>
+	<div class="flex-container">
+		Address:&nbsp;<input type="text" id="address" class="fill-width">
+	</div>
+	<div class="flex-container">
+		Account:&nbsp;<input type="number" id="account" value="0" min="0" max="2147483647" class="fill-width">(Usually 0)
+	</div>
+	<input type="button" value="search" id="search" class="button"><input type="button" value="cancel" id="cancel" class="button"><br>
+	<br>
+	<div id="results"></div>
+	<script src="libraries.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
+
